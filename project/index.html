@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <h1>Spotify</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><span class="material-icons">home</span> Home</a></li>
+                <li><a href="#"><span class="material-icons">search</span> Search</a></li>
+                <li><a href="#"><span class="material-icons">library_music</span> Your Library</a></li>
+            </ul>
+            <div class="playlist">
+                <h3>Playlists</h3>
+                <ul>h
+                    <li><a href="#">Liked Songs</a></li>
+                    <li><a href="#">Workout Mix</a></li>
+                    <li><a href="#">Top Hits</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="content">
+            <div class="header">
+                <h2>Good Evening</h2>
+            </div>
+            <div class="song-grid">
+                <div class="song-card">
+                    <img src="card4img (1).jpeg" alt="Song 1">
+                    <p>Song 1</p>
+                    <button class="play-btn" onclick="playSong('song1.mp3')">Play</button>
+                </div>
+                <div class="song-card">
+                    <img src="card6img.jpeg" alt="Song 2">
+                    <p>Song 2</p>
+                    <button class="play-btn" onclick="playSong('song2.mp3')">Play</button>
+                </div>
+                <div class="song-card">
+                    <img src="card1img.jpeg" alt="Song 3">
+                    <p>Song 3</p>
+                    <button class="play-btn" onclick="playSong('song3.mp3')">Play</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="player">
+        <audio id="audioPlayer" controls>
+            <source src="" type="audio/mp3">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
